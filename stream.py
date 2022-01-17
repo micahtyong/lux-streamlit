@@ -9,7 +9,7 @@ def app():
     st.write('Training Data Exploratory Data Analysis ')
     df = pd.read_csv("https://raw.githubusercontent.com/lux-org/lux-datasets/master/data/hpi.csv")
     export_file = 'visualizations.html'
-    df.save_as_html(df, export_file)
+    df.save_as_html(export_file)
     txt = Path(export_file).read_text()
     components.html(txt, width=800, height=350)
 
