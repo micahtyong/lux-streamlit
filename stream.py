@@ -1,8 +1,8 @@
 import streamlit as st
 import streamlit.components.v1 as components
 from pathlib import Path
-import pandas as pd
 import lux
+import pandas as pd
 
 def app():
     st.title('Generate EDA')
